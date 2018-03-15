@@ -1,0 +1,30 @@
+version: '2'
+services:
+  server:
+    container_name: ragemp-server
+    build:
+      context: ./
+      dockerfile: docker/server/Dockerfile
+    volumes:
+      - ./ragemp:/ragemp
+    # links:
+    #   - db
+    environment:
+      - PORT=3020
+      - DB_HOST=db
+      - DB_PORT=5984
+      - DB_NAME=game
+    ports:
+      - "22005:22005"
+      - "22005:22005/udp"
+      - "22006:22006"
+  # db: # oppitionally enable your favorite db image
+  #   build:
+  #     context: ./
+  #     dockerfile: docker/db/Dockerfile
+  #   volumes:
+  #     - data-volume:/data/db
+  #   ports:
+  #     - "5985:5984"
+volumes:
+  data-volume:
