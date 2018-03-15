@@ -3,7 +3,7 @@
 
 
 ## ABOUT
-This project is the dockerize [ragemp](http://rage.mp) server. In this container it runs a gulp task to watch for files change in all the directories. Feel free to change this behavior on `gulpfile.js` line 33: 
+This project is the dockerized version of the [RAGE Multiplayer](http://rage.mp) server. In this container it runs a gulp task to watch for files change in all the directories. Feel free to change this behavior on `gulpfile.js` line 33: 
 
     var  watcher  =  gulp.watch('**/*.js', \['serve'\]);
 
