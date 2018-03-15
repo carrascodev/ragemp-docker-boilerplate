@@ -1,4 +1,4 @@
-/ragemp
+/ragemp/*
 
 !/ragemp/gulpfile.js
 !/ragemp/package.json
