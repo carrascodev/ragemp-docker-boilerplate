@@ -18,7 +18,7 @@ services:
       - "22005:22005"
       - "22005:22005/udp"
       - "22006:22006"
-  # db: # oppitionally enable your favorite db image
+  # db: # optionally enable your favorite db image
   #   build:
   #     context: ./
   #     dockerfile: docker/db/Dockerfile
