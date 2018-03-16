@@ -5,8 +5,8 @@ services:
     build:
       context: ./
       dockerfile: docker/server/Dockerfile
-    volumes:
-      - ./ragemp:/ragemp
+    # volumes:
+    #   - ./ragemp:/ragemp
     # links:
     #   - db
     environment:

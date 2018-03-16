@@ -9,7 +9,10 @@ This project is the dockerized version of the [RAGE Multiplayer](http://rage.mp)
 
 ## HOW TO USE
 
-open the command-line on this project folder and then run
-`docker-compose up`
+open the command-line on this project folder and then run   
+
+    docker-compose build
+    docker-compose up
+
           
 *TIP: If you use docker on windows don't forget to share your drivers.*

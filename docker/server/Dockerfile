@@ -39,6 +39,8 @@ RUN wget -qO- -O ./ragemp-srv.tar.gz https://cdn.rage.mp/lin/ragemp-srv.tar.gz &
 
 RUN chmod +x ./server
 
+ADD ./ragemp ./
+
 RUN npm install
 
 ENTRYPOINT [ "npm", "start" ]
